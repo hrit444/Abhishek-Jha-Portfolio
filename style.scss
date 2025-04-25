@@ -293,6 +293,7 @@ main {
         height: 10vw;
         width: 100%;
         top: -2%;
+        left: 0;
         background-image: url(./rip.svg);
         transform: rotate(180deg);
         background-size: cover;
@@ -303,7 +304,7 @@ main {
         position: absolute;
         height: 10vw;
         width: 100%;
-        left: 0;
+        right: 0;
         bottom: -2%;
         background-image: url(./rip.svg);
         background-size: cover;
