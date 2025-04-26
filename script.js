@@ -46,16 +46,18 @@ function loaderAnimation() {
       ease: Circ.easeInOut,
     })
     .to(".green-sec", {
-      height: "100vh",
+      // display: "block",
+      height: "100%",
       top: 0,
-      duration: 1,
-      delay: -1.1,
+      // bottom: "100%",
+      duration: .8,
+      delay: -.8,
       ease: Circ.easeInOut,
     })
     .to(".green-sec", {
       height: 0,
-      duration: 0.5,
-      delay: -0.53,
+      duration: .3,
+      delay: -.3,
       ease: Circ.easeInOut,
       beComplete: function () {
         homePageAnimation();
@@ -91,7 +93,8 @@ function homePageAnimation() {
   .to(".home .row img", {
     opacity: 1,
     scale: 1.1,
-    duration: 1,
+    duration: .8,
+    delay: -.3,
     ease: Expo.easeInOut,
     beComplete: function () {
       animateSvg();

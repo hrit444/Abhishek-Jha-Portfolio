@@ -39,76 +39,83 @@ body {
   width: 100%;
 }
 
+body {
+  overflow: hidden;
+}
+
+.reveal {
+  .parent {
+    overflow-y: hidden;
+    width: 100%;
+    display: block;
+    display: flex;
+    justify-content: center;
+
+    .child {
+      display: block;
+
+      span {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.loader {
+  // display: none;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background-color: #161616;
+  color: #fcfaf8;
+  position: relative;
+  z-index: 9999;
+  // overflow: hidden;
+
+  .top-text {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    h5 {
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 0.9vw;
+    }
+  }
+
+  h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5.2vw;
+    font-weight: 400;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    #jha {
+      @include moz();
+    }
+  }
+}
+
+.green-sec {
+  // display: none;
+  z-index: 9999;
+  position: absolute;
+  top: 100%;
+  // bottom: 0;
+  height: 0;
+  width: 100%;
+  background-color: #14cf92;
+}
+
 main {
   width: 100%;
   position: relative;
-
-  .reveal {
-    .parent {
-      overflow-y: hidden;
-      width: 100%;
-      display: block;
-      display: flex;
-      justify-content: center;
-
-      .child {
-        display: block;
-
-        span {
-          display: inline-block;
-        }
-      }
-    }
-  }
-
-  .loader {
-    // display: none;
-    position: absolute;
-    height: 100vh;
-    width: 100%;
-    background-color: #161616;
-    color: #fcfaf8;
-    // position: relative;
-    z-index: 9999;
-
-    .top-text {
-      position: absolute;
-      top: 5%;
-      left: 50%;
-      transform: translateX(-50%);
-
-      h5 {
-        text-transform: uppercase;
-        text-align: center;
-        font-size: 0.9vw;
-      }
-    }
-
-    h1 {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 5.2vw;
-      font-weight: 400;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-
-      #jha {
-        @include moz();
-      }
-    }
-  }
-
-  .green-sec {
-    display: none;
-    position: absolute;
-    top: 100%;
-    height: 0vh;
-    width: 100%;
-    background-color: #14cf92;
-  }
 
   .home {
     // display: none;
@@ -284,7 +291,7 @@ main {
       background-color: #f2f2f2;
       margin-top: 13vw;
       position: relative;
-      transition: all ease .5s;
+      transition: all ease 0.5s;
       padding: 0 4.5vw;
 
       &::before {
@@ -443,7 +450,7 @@ main {
         .cursor {
           z-index: 99999;
           position: absolute;
-          
+
           .s {
             position: absolute;
             opacity: 0;
@@ -553,22 +560,22 @@ main {
         gap: 2vw;
         margin: 13vw 0;
         margin-left: 61.5vw;
-  
+
         h6 {
           font-size: 0.85vw;
           color: #a2a2a2;
         }
-  
+
         .contents {
           display: flex;
           flex-direction: column;
           gap: 0.9vw;
-  
+
           .cline {
             display: flex;
             height: 1.45vw;
             gap: 0.5vw;
-  
+
             h4 {
               font-size: 1.5vw;
               line-height: 1.5vw;
@@ -578,7 +585,7 @@ main {
               position: relative;
               cursor: pointer;
               width: fit-content;
-  
+
               &::before {
                 content: "";
                 height: 1px;
@@ -590,7 +597,7 @@ main {
                 transition: 0.3s linear;
                 transition-delay: 0.08s;
               }
-  
+
               &::after {
                 content: "";
                 height: 1px;
@@ -610,11 +617,11 @@ main {
               transition: all 0.2s linear;
               transition-delay: 0.2s;
             }
-  
+
             &:hover .green-bar {
               opacity: 1;
             }
-  
+
             &:hover h4::before {
               width: 100%;
             }
@@ -624,7 +631,7 @@ main {
           }
         }
       }
-  
+
       button {
         width: 100%;
         padding: 2.4vw 0;
@@ -633,7 +640,7 @@ main {
         border-radius: 50px;
         position: relative;
         overflow: hidden;
-  
+
         h3 {
           font-size: 1.4vw;
           font-weight: 100;
@@ -643,13 +650,13 @@ main {
           left: 50%;
           transform: translate(-50%, -50%);
           transition: 0.15s all ease-in-out;
-  
+
           span {
             @include moz();
             color: #000;
           }
         }
-  
+
         &::before {
           content: "";
           background-color: white;
@@ -662,12 +669,12 @@ main {
           width: 80%;
           transition: 0.15s all linear;
         }
-  
+
         &:hover::before {
           width: 100%;
           opacity: 1;
         }
-  
+
         &:hover h4 {
           opacity: 1;
         }

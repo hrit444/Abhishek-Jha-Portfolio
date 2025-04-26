@@ -23,43 +23,45 @@ body {
   width: 100%;
 }
 
-main {
-  width: 100%;
-  position: relative;
+body {
+  overflow: hidden;
 }
-main .reveal .parent {
+
+.reveal .parent {
   overflow-y: hidden;
   width: 100%;
   display: block;
   display: flex;
   justify-content: center;
 }
-main .reveal .parent .child {
+.reveal .parent .child {
   display: block;
 }
-main .reveal .parent .child span {
+.reveal .parent .child span {
   display: inline-block;
 }
-main .loader {
+
+.loader {
   position: absolute;
   height: 100vh;
   width: 100%;
   background-color: #161616;
   color: #fcfaf8;
+  position: relative;
   z-index: 9999;
 }
-main .loader .top-text {
+.loader .top-text {
   position: absolute;
   top: 5%;
   left: 50%;
   transform: translateX(-50%);
 }
-main .loader .top-text h5 {
+.loader .top-text h5 {
   text-transform: uppercase;
   text-align: center;
   font-size: 0.9vw;
 }
-main .loader h1 {
+.loader h1 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -70,17 +72,23 @@ main .loader h1 {
   display: flex;
   justify-content: center;
 }
-main .loader h1 #jha {
+.loader h1 #jha {
   color: #14cf92;
   font-family: Mozius;
 }
-main .green-sec {
-  display: none;
+
+.green-sec {
+  z-index: 9999;
   position: absolute;
   top: 100%;
-  height: 0vh;
+  height: 0;
   width: 100%;
   background-color: #14cf92;
+}
+
+main {
+  width: 100%;
+  position: relative;
 }
 main .home {
   min-height: 200vh;
