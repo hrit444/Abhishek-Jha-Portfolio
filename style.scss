@@ -394,6 +394,7 @@ main {
         flex-direction: column;
         gap: 6vw;
         margin-top: 12vw;
+        position: relative;
 
         .row {
           display: flex;
@@ -426,6 +427,7 @@ main {
 
         .row2 {
           justify-content: center;
+
           .cont3 {
             width: 70%;
           }
@@ -439,11 +441,20 @@ main {
           .cont4 {
             margin-top: 30vw;
             width: 50%;
-            aspect-ratio: 1/1.1;
+
+            img{
+              transform: scale(1.5);
+            }
           }
 
           .cont5 {
+            height: 30%;
             width: 70%;
+
+
+            // img{
+            //   scale: .8;
+            // }
           }
         }
 
@@ -818,12 +829,13 @@ main {
       // bottom: 0;
       width: 100%;
       padding: 0 4.5vw;
-      background-color: #263939;
+      // background-color: #263939;
+      background-color: red;
       display: flex;
       flex-direction: column;
       gap: 9vw;
       overflow: hidden;
-      padding-bottom: 12vw;
+      padding-bottom: 6vw;
 
       .heading {
         display: flex;
@@ -995,7 +1007,7 @@ main {
     #fbottom {
       position: absolute;
       width: 100%;
-      height: 93%;
+      height:   100%;
       left: 0;
       bottom: 0;
       object-fit: cover;

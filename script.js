@@ -56,7 +56,7 @@ function loaderAnimation() {
     })
     .to(".green-sec", {
       height: 0,
-      duration: .3,
+      duration: .4,
       delay: -.3,
       ease: Circ.easeInOut,
       beComplete: function () {
@@ -202,7 +202,44 @@ revealSpanCreator();
 valueSetters();
 loaderAnimation();
 // homePageAnimation()
+
+// function preloadImages(imageUrls, allImagesLoadedCallback) {
+//   let loadedImagesCount = 0;
+//   const totalImages = imageUrls.length;
+
+//   imageUrls.forEach((url) => {
+//     const img = new Image();
+//     img.src = url;
+
+//     img.onload = img.onerror = function () {
+//       loadedImagesCount++;
+//       if (loadedImagesCount === totalImages) {
+//         allImagesLoadedCallback(); // ✅ All images are loaded
+//       }
+//     };
+//   });
+// }
+
+
+// const imagesToPreload = [
+//   "./show1.webp",
+//   "./show2.webp",
+//   "./show3.webp",
+//   "./show4.webp",
+//   "./show5.webp",
+// ];
+
+// preloadImages(imagesToPreload, function() {
+//   console.log("✅ All images loaded!");
+//   loaderAnimation();
+// });
+
+
 projectHoverEffect();
 locomotive();
 
 // imgRotateAnimation()
+
+
+
+
