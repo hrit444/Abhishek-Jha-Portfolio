@@ -50,14 +50,14 @@ function loaderAnimation() {
       height: "100%",
       top: 0,
       // bottom: "100%",
-      duration: .8,
-      delay: -.8,
+      duration: 0.8,
+      delay: -0.8,
       ease: Circ.easeInOut,
     })
     .to(".green-sec", {
       height: 0,
-      duration: .4,
-      delay: -.3,
+      duration: 0.4,
+      delay: -0.3,
       ease: Circ.easeInOut,
       beComplete: function () {
         homePageAnimation();
@@ -68,9 +68,9 @@ function loaderAnimation() {
 function animateSvg() {
   gsap.to("#Visual>g>g>path, #Visual>g>g>polyline", {
     strokeDashoffset: 0,
-    duration: .75,
+    duration: 0.75,
     stagger: 0.35,
-    delay: .5,
+    delay: 0.5,
     ease: Expo.easeInOut,
   });
 }
@@ -81,25 +81,25 @@ function homePageAnimation() {
     y: 0,
     opacity: 1,
     stagger: 0.05,
-    delay: .6,
+    delay: 0.6,
     ease: Expo.easeInOut,
   })
-  .to(".home .parent .child", {
-    y: 0,
-    duration: 1.4,
-    stagger: 0.04,
-    ease: Expo.easeInOut,
-  })
-  .to(".home .row img", {
-    opacity: 1,
-    scale: 1.1,
-    duration: .8,
-    delay: -.3,
-    ease: Expo.easeInOut,
-    beComplete: function () {
-      animateSvg();
-    },
-  })
+    .to(".home .parent .child", {
+      y: 0,
+      duration: 1.4,
+      stagger: 0.04,
+      ease: Expo.easeInOut,
+    })
+    .to(".home .row img", {
+      opacity: 1,
+      scale: 1.1,
+      duration: 0.8,
+      delay: -0.3,
+      ease: Expo.easeInOut,
+      beComplete: function () {
+        animateSvg();
+      },
+    });
 }
 
 let locoInstance;
@@ -158,50 +158,63 @@ function projectHoverEffect() {
   });
 }
 
-// function imgRotateAnimation(){
-//   gsap.to(".img1", {
-//     rotate: "-10deg",
-//     duration: 1,
-//     scrollTrigger: {
-//       trigger: ".img1",
-//       scroller: "body",
-//       start: "top 60%",
-//       end: "top 45%",
-//       markers: true,
-//       scrub: 2
-//     }
-//   })
-//   gsap.to(".img2", {
-//     rotate: "-5deg",
-//     duration: 1,
-//     scrollTrigger: {
-//       trigger: ".img1",
-//       scroller: "body",
-//       start: "top 60%",
-//       end: "top 45%",
-//       markers: true,
-//       scrub: 2
-//     }
-//   })
-//   gsap.to(".img3", {
-//     rotate: "0deg",
-//     duration: 1,
-//     scrollTrigger: {
-//       trigger: ".img1",
-//       scroller: "body",
-//       start: "top 60%",
-//       end: "top 45%",
-//       markers: true,
-//       scrub: 2
-//     }
-//   })
-//   window.addEventListener('DOMContentLoaded', imgRotateAnimation);
-// }
+function imgRotateAnimation() {
+  gsap.to(".img1", {
+    rotate: "-10deg",
+    duration: 1,
+    scrollTrigger: {
+      trigger: ".img1",
+      scroller: "body",
+      start: "top 60%",
+      end: "top 45%",
+      markers: true,
+      scrub: 2,
+    },
+  });
+  gsap.to(".img2", {
+    rotate: "-5deg",
+    duration: 1,
+    scrollTrigger: {
+      trigger: ".img1",
+      scroller: "body",
+      start: "top 60%",
+      end: "top 45%",
+      markers: true,
+      scrub: 2,
+    },
+  });
+  gsap.to(".img3", {
+    rotate: "0deg",
+    duration: 1,
+    scrollTrigger: {
+      trigger: ".img1",
+      scroller: "body",
+      start: "top 60%",
+      end: "top 45%",
+      markers: true,
+      scrub: 2,
+    },
+  });
+  window.addEventListener("DOMContentLoaded", imgRotateAnimation);
+}
 
-revealSpanCreator();
-valueSetters();
-loaderAnimation();
-// homePageAnimation()
-projectHoverEffect();
-locomotive();
-// imgRotateAnimation()
+window.onload = function () {
+    // Select all <img> elements
+    const imgTags = document.querySelectorAll("img");
+
+    // Log each <img> element and its src
+    imgTags.forEach((img, index) => {
+      console.log(`${index + 1}.`, img);
+      console.log("   src:", img.src);
+    });
+
+    const imgSources = Array.from(imgTags).map((img) => img.src);
+    console.log("All <img> src URLs:", imgSources);
+
+    revealSpanCreator();
+    valueSetters();
+    loaderAnimation();
+    // homePageAnimation()
+    projectHoverEffect();
+    locomotive();
+  };

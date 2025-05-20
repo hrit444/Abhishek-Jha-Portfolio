@@ -1,232 +1,272 @@
-<div class="projects">
-                        <div class="row row1">
-                            <div class="cont cont1">
-                                <img data-index="0" data-scroll data-scroll-speed="-1" src="./show1.png" alt="">
-                            </div>
-                            <div class="cont cont2">
-                                <img data-index="1" data-scroll data-scroll-speed="-1" src="./show2.png" alt="">
-                            </div>
-                        </div>
-                        <div class="row row2">
-                            <div class="cont cont3">
-                                <img data-index="2" data-scroll data-scroll-speed="-1" src="./show3.png" alt="">
-                            </div>
-                        </div>
-                        <div class="row row3">
-                            <div class="cont cont4">
-                                <img data-index="3" data-scroll data-scroll-speed="-1" src="./show4.png" alt="">
-                            </div>
-                            <div class="cont cont5">
-                                <img data-index="4" data-scroll data-scroll-speed="-1" src="./show5.png" alt="">
-                            </div>
-                        </div>
+<footer>
+                    <img data-scroll data-scroll-speed="-2" id="fbottom" src="./fbottom.webp" alt="">
 
-                        <div class="cursor">
-
-                            <div>
-                                <div class="crow">
-                                    <div class="ccircle"></div>
-                                    <div class="ccapsule">
-                                        <h5>behance</h5>
-                                    </div>
-                                </div>
-                                <div class="elem">
-                                    <img src="./project1/1.png" alt="">
-                                    <img src="./project1/2.png" alt="">
-                                    <img src="./project1/3.png" alt="">
-                                    <img src="./project1/4.png" alt="">
-                                    <img src="./project1/5.png" alt="">
-                                </div>
-                            </div>
-                        
-                            <div>
-                                <div class="crow">
-                                    <div class="ccircle"></div>
-                                    <div class="ccapsule">
-                                        <h5>behance</h5>
-                                    </div>
-                                </div>
-                                <div class="elem">
-                                    <img src="./project2/1.png" alt="">
-                                    <img src="./project2/2.png" alt="">
-                                    <img src="./project2/3.png" alt="">
-                                    <img src="./project2/4.png" alt="">
-                                    <img src="./project2/5.png" alt="">
-                                </div>
-                            </div>
-
-                            <div>
-                                <div class="crow">
-                                    <div class="ccircle"></div>
-                                    <div class="ccapsule">
-                                        <h5>behance</h5>
-                                    </div>
-                                </div>
-                                <div class="elem">
-                                    <img src="./project3/1.png" alt="">
-                                    <img src="./project3/2.png" alt="">
-                                    <img src="./project3/3.png" alt="">
-                                    <img src="./project3/4.png" alt="">
-                                    <img src="./project3/5.png" alt="">
-                                </div>
-                            </div>
-
-                            <div>
-                                <div class="crow">
-                                    <div class="ccircle"></div>
-                                    <div class="ccapsule">
-                                        <h5>behance</h5>
-                                    </div>
-                                </div>
-                                <div class="elem">
-                                    <img src="./project4/1.png" alt="">
-                                    <img src="./project4/2.png" alt="">
-                                    <img src="./project4/3.png" alt="">
-                                    <img src="./project4/4.png" alt="">
-                                    <img src="./project4/5.png" alt="">
-                                </div>
-                            </div>
-
-                            <div>
-                                <div class="crow">
-                                    <div class="ccircle"></div>
-                                    <div class="ccapsule">
-                                        <h5>behance</h5>
-                                    </div>
-                                </div>
-                                <div class="elem">
-                                    <img src="./project5/1.png" alt="">
-                                    <img src="./project5/2.png" alt="">
-                                    <img src="./project5/3.png" alt="">
-                                    <img src="./project5/4.png" alt="">
-                                    <img src="./project5/5.png" alt="">
-                                </div>
-                            </div>
-                        
-                        </div>
+                    <div class="heading">
+                    <h1>Let's Talk</h1>
+                    <h1>About the Next</h1>
+                    <h1>big thing</h1>
+                    <svg
+                        class="o-ui-arrow"
+                        width="64"
+                        height="64"
+                        viewBox="0 0 64 64"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                        d="M3.10162 3.10156L62.9999 62.9999"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        ></path>
+                        <path
+                        d="M63 1.00001L63 63L0.999989 63"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        ></path>
+                    </svg>
                     </div>
+        
+                    <div class="buttons">
+                    <button>
+                        <h4>Write a Message</h4>
+                    </button>
+                    <button>
+                        <h4>Discuss Project</h4>
+                    </button>
+                    </div>
+        
+                    <div class="social">
+                    <div class="media-sec">
+                        <div class="head">
+                        <h3>Behance</h3>
+                        <h5>@abhishek_jha</h5>
+                        </div>
+                        <img src="./behance.svg" alt="" />
+                    </div>
+                    <div class="media-sec">
+                        <div class="head">
+                        <h3>Instagram</h3>
+                        <h5>@design_flavorist</h5>
+                        </div>
+                        <img src="./insta.svg" alt="" />
+                    </div>
+                    <div class="media-sec">
+                        <div class="head">
+                        <h3>Twitter</h3>
+                        <h5>@design_flavorist</h5>
+                        </div>
+                        <img src="./twitte.svg" alt="" />
+                    </div>
+                    <div class="media-sec">
+                        <div class="head">
+                        <h3>Dribble</h3>
+                        <h5>@abhishek_jha</h5>
+                        </div>
+                        <img src="./dribbble.svg" alt="" />
+                    </div>
+                    </div>
+        
+                    <div class="f-bottom">
+                    <h5>
+                        &copy;2025 Abhishek Jha, All rights reserved •
+                        <a href="#">Credits</a>
+                    </h5>
+                    <a href="#">2020 Portfolio</a>
+                    </div>
+        
+                </footer>
 
-.cursor {
-          // position: fixed;
+                footer {
+      position: relative;
+      width: 100%;
+      height: 83vw;
+      padding: 0 4.5vw;
+      // background-color: #263939;
+      background-color: red;
+      // background-image: url(./fbottom.webp);
+      background-position: center;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      gap: 9vw;
+      overflow: hidden;
+
+      .heading {
+        display: flex;
+        flex-direction: column;
+        // background-color: red;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+        margin-top: 12vw;
+
+        h1 {
+          font-size: 6.7vw;
+          line-height: 5.5vw;
+          font-weight: 200;
+          text-transform: uppercase;
+          color: white;
+        }
+        .o-ui-arrow {
+          @include arrowSvg();
           position: absolute;
-          z-index: 99999;
-          // opacity: 0;
-          pointer-events: none;
+          bottom: 0;
+          left: 0;
+        }
+      }
 
-          div {
+      .buttons {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        z-index: 1;
+
+        button {
+          width: 48%;
+          border: 1px solid white;
+          background-color: transparent;
+          border-radius: 100px;
+          padding: 3vw 0;
+          position: relative;
+          overflow: hidden;
+
+          h4 {
+            font-size: 1.8vw;
+            color: white;
+            position: relative;
+            z-index: 5;
+            transition: 0.3s all cubic-bezier(0.19, 1, 0.22, 1);
+          }
+
+          &::after {
+            content: "";
+            z-index: 4;
+            background-color: white;
+            height: 100%;
+            width: 75%;
             opacity: 0;
-            pointer-events: none;
-            width: 25vw;
-            height: 18vw;
-            display: flex;
-            flex-direction: column;
-            gap: 3%;
-            transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            border-radius: 100px;
+            transform: translate(-50%, -50%);
+            transition: 0.3s all cubic-bezier(0.19, 1, 0.22, 1);
+          }
 
-            .crow {
-              height: 15%;
-              width: 100%;
-              display: flex;
-              flex-direction: row;
-              align-items: center;
-              gap: 0.5vw;
+          &:hover h4 {
+            color: black;
+          }
 
-              .ccircle {
-                height: 100%;
-                width: 9%;
-                border-radius: 15px;
-                border: 2px solid white;
-              }
+          &:hover::after {
+            opacity: 1;
+            width: 100%;
+          }
 
-              .ccapsule {
-                width: 40%;
-                height: 100%;
-                background-color: #fff;
-                border-radius: 20px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+          &:hover {
+            border: none;
+          }
+        }
+      }
 
-                h5 {
-                  font-size: 0.9vw;
-                  font-weight: 100;
-                  text-transform: uppercase;
-                }
-              }
+      .social {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        z-index: 1;
+
+        .media-sec {
+          width: 20%;
+          display: flex;
+          justify-content: space-between;
+          border-top: 1px solid white;
+          color: white;
+          padding: 1vw 0;
+          transition: all linear 0.15s;
+          position: relative;
+          cursor: pointer;
+
+          .head {
+            position: relative;
+            z-index: 5;
+
+            h3 {
+              font-size: 1.75vw;
+              font-weight: 100;
             }
 
-            .elem {
-              height: 82%;
-              width: 100%;
-              position: relative;
-
-              img {
-                position: absolute;
-                top: 0;
-                left: 0;
-                opacity: 0;
-                width: 100%;
-                animation: an 4s linear infinite;
-
-                &:nth-child(2) {
-                  animation-delay: 1s;
-                }
-
-                &:nth-child(3) {
-                  animation-delay: 2s;
-                }
-
-                &:nth-child(4) {
-                  animation-delay: 3s;
-                }
-
-                &:nth-child(5) {
-                  animation-delay: 4s;
-                }
-              }
+            h5 {
+              font-size: 0.9vw;
+              font-weight: 100;
+              opacity: 0.6;
             }
+          }
 
-            @keyframes an {
-              0% {
-                opacity: 1;
-              }
-              20% {
-                opacity: 1;
-              }
-              21% {
-                opacity: 0;
-              }
-              40% {
-                opacity: 0;
-              }
-              60% {
-                opacity: 0;
-              }
-              80% {
-                opacity: 0;
-              }
-              100% {
-                opacity: 0;
-              }
-            }
+          img {
+            position: relative;
+            z-index: 5;
+          }
+
+          &::after {
+            content: "";
+            background-color: #14cf92;
+            position: absolute;
+            z-index: 4;
+            top: 0;
+            left: 0;
+            height: 0%;
+            width: 100%;
+            transition: all linear 0.15s;
+          }
+
+          &:hover::after {
+            height: 100%;
+          }
+
+          &:hover {
+            padding: 1vw;
+          }
+        }
+      }
+
+      .f-bottom {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        position: relative;
+        z-index: 4;
+
+        h5 {
+          font-size: 0.9vw;
+          opacity: 0.4;
+
+          a {
+            font-size: 1vw;
+            color: white;
+            opacity: 1;
           }
         }
 
-        document.querySelectorAll(".cont") .forEach(function(elem){ 
-  let image;
-  elem.addEventListener("mousemove", function(dets){ 
-    image = dets.target;
-    console.log(document.querySelector(".cursor").children[image.dataset.index])
-    // document.querySelector(".cursor").children[image.dataset.index].style.opacity = 1;
-    // document.querySelector(".cursor").children[image.dataset.index].style.transform = `translate(${dets.clientX}px, ${dets.clientY}px)`; 
-    elem.style.filter = "grayscale(1)"; 
+        a {
+          font-size: 1vw;
+          color: white;
+          opacity: 0.4;
+        }
+      }
 
-  })
-  elem.addEventListener("mouseleave", function(dets){
-    image = dets.target;
-    elem.style.filter = "grayscale(0)"; 
-    // document.querySelector(".cursor").children[image.dataset.index].style.opacity = 0; 
-  }) 
-})
+      #fbottom {
+        position: absolute;
+        width: 100%;
+        height: 80%;
+        left: 0;
+        bottom: 0;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
 
-console.log(document.querySelector(".cursor").children[image.dataset.index]) 
+    here are html and scss code tell me what the problem is there for parallax image
+    

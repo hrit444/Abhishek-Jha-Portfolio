@@ -702,17 +702,24 @@ main .home .honors .main-content .right-content .elem .right img {
   height: 1.5vw;
 }
 main .home footer {
-  position: relative;
   width: 100%;
-  height: 83vw;
-  padding: 0 4.5vw;
+  position: relative;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 0.5vw 4.5vw;
   background-color: #263939;
+}
+main .home footer .footer-container {
+  position: relative;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
   display: flex;
   flex-direction: column;
-  gap: 9vw;
+  gap: 5vw;
   overflow: hidden;
 }
-main .home footer .heading {
+main .home footer .footer-container .heading {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -720,32 +727,33 @@ main .home footer .heading {
   z-index: 1;
   margin-top: 12vw;
 }
-main .home footer .heading h1 {
+main .home footer .footer-container .heading h1 {
   font-size: 6.7vw;
   line-height: 5.5vw;
   font-weight: 200;
   text-transform: uppercase;
   color: white;
 }
-main .home footer .heading .o-ui-arrow {
+main .home footer .footer-container .heading .o-ui-arrow {
   position: absolute;
   bottom: 0;
   left: 0;
 }
-main .home footer .heading .o-ui-arrow path {
+main .home footer .footer-container .heading .o-ui-arrow path {
   height: 20vw;
   aspect-ratio: 1/1;
   stroke: #bdbdbd;
 }
-main .home footer .buttons {
+main .home footer .footer-container .buttons {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: relative;
   z-index: 1;
+  margin-top: 3vw;
 }
-main .home footer .buttons button {
+main .home footer .footer-container .buttons button {
   width: 48%;
   border: 1px solid white;
   background-color: transparent;
@@ -754,14 +762,14 @@ main .home footer .buttons button {
   position: relative;
   overflow: hidden;
 }
-main .home footer .buttons button h4 {
+main .home footer .footer-container .buttons button h4 {
   font-size: 1.8vw;
   color: white;
   position: relative;
   z-index: 5;
   transition: 0.3s all cubic-bezier(0.19, 1, 0.22, 1);
 }
-main .home footer .buttons button::after {
+main .home footer .footer-container .buttons button::after {
   content: "";
   z-index: 4;
   background-color: white;
@@ -775,24 +783,25 @@ main .home footer .buttons button::after {
   transform: translate(-50%, -50%);
   transition: 0.3s all cubic-bezier(0.19, 1, 0.22, 1);
 }
-main .home footer .buttons button:hover h4 {
+main .home footer .footer-container .buttons button:hover h4 {
   color: black;
 }
-main .home footer .buttons button:hover::after {
+main .home footer .footer-container .buttons button:hover::after {
   opacity: 1;
   width: 100%;
 }
-main .home footer .buttons button:hover {
+main .home footer .footer-container .buttons button:hover {
   border: none;
 }
-main .home footer .social {
+main .home footer .footer-container .social {
   width: 100%;
   display: flex;
   justify-content: space-between;
   position: relative;
+  margin-top: 3vw;
   z-index: 1;
 }
-main .home footer .social .media-sec {
+main .home footer .footer-container .social .media-sec {
   width: 20%;
   display: flex;
   justify-content: space-between;
@@ -803,24 +812,24 @@ main .home footer .social .media-sec {
   position: relative;
   cursor: pointer;
 }
-main .home footer .social .media-sec .head {
+main .home footer .footer-container .social .media-sec .head {
   position: relative;
   z-index: 5;
 }
-main .home footer .social .media-sec .head h3 {
+main .home footer .footer-container .social .media-sec .head h3 {
   font-size: 1.75vw;
   font-weight: 100;
 }
-main .home footer .social .media-sec .head h5 {
+main .home footer .footer-container .social .media-sec .head h5 {
   font-size: 0.9vw;
   font-weight: 100;
   opacity: 0.6;
 }
-main .home footer .social .media-sec img {
+main .home footer .footer-container .social .media-sec img {
   position: relative;
   z-index: 5;
 }
-main .home footer .social .media-sec::after {
+main .home footer .footer-container .social .media-sec::after {
   content: "";
   background-color: #14cf92;
   position: absolute;
@@ -831,38 +840,39 @@ main .home footer .social .media-sec::after {
   width: 100%;
   transition: all linear 0.15s;
 }
-main .home footer .social .media-sec:hover::after {
+main .home footer .footer-container .social .media-sec:hover::after {
   height: 100%;
 }
-main .home footer .social .media-sec:hover {
+main .home footer .footer-container .social .media-sec:hover {
   padding: 1vw;
 }
-main .home footer .f-bottom {
+main .home footer .footer-container .f-bottom {
   width: 100%;
   display: flex;
   justify-content: space-between;
   color: white;
   position: relative;
   z-index: 4;
+  margin-bottom: 3vw;
 }
-main .home footer .f-bottom h5 {
+main .home footer .footer-container .f-bottom h5 {
   font-size: 0.9vw;
   opacity: 0.4;
 }
-main .home footer .f-bottom h5 a {
+main .home footer .footer-container .f-bottom h5 a {
   font-size: 1vw;
   color: white;
   opacity: 1;
 }
-main .home footer .f-bottom a {
+main .home footer .footer-container .f-bottom a {
   font-size: 1vw;
   color: white;
   opacity: 0.4;
 }
-main .home #fbottom {
+main .home footer .footer-container #fbottom {
   position: absolute;
   width: 100%;
-  height: 100%;
+  left: 0;
   bottom: 0;
   -o-object-fit: cover;
      object-fit: cover;
